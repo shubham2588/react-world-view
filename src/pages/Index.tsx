@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from 'react';
 import { ChevronDown, Github, Linkedin, Mail, ExternalLink, Code, Database, Server, Globe, Download, MapPin, Calendar } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -77,21 +76,21 @@ const Index = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-50 via-indigo-50 to-teal-50">
+    <div className="min-h-screen bg-gradient-to-br from-purple-50 via-pink-50 to-orange-50">
       {/* Navigation */}
-      <nav className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md border-b border-blue-200 shadow-sm">
+      <nav className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md border-b border-purple-200 shadow-sm">
         <div className="container mx-auto px-6 py-4">
           <div className="flex justify-between items-center">
-            <div className="text-2xl font-bold bg-gradient-to-r from-blue-600 to-teal-600 bg-clip-text text-transparent">
+            <div className="text-2xl font-bold bg-gradient-to-r from-purple-600 to-orange-600 bg-clip-text text-transparent">
               John Doe
             </div>
             <div className="hidden md:flex space-x-8">
-              <button onClick={() => scrollToSection('home')} className="text-gray-700 hover:text-blue-600 transition-colors font-medium">Home</button>
-              <button onClick={() => scrollToSection('about')} className="text-gray-700 hover:text-blue-600 transition-colors font-medium">About</button>
-              <button onClick={() => scrollToSection('experience')} className="text-gray-700 hover:text-blue-600 transition-colors font-medium">Experience</button>
-              <button onClick={() => scrollToSection('skills')} className="text-gray-700 hover:text-blue-600 transition-colors font-medium">Skills</button>
-              <button onClick={() => scrollToSection('projects')} className="text-gray-700 hover:text-blue-600 transition-colors font-medium">Projects</button>
-              <button onClick={() => scrollToSection('contact')} className="text-gray-700 hover:text-blue-600 transition-colors font-medium">Contact</button>
+              <button onClick={() => scrollToSection('home')} className="text-gray-700 hover:text-purple-600 transition-colors font-medium">Home</button>
+              <button onClick={() => scrollToSection('about')} className="text-gray-700 hover:text-purple-600 transition-colors font-medium">About</button>
+              <button onClick={() => scrollToSection('experience')} className="text-gray-700 hover:text-purple-600 transition-colors font-medium">Experience</button>
+              <button onClick={() => scrollToSection('skills')} className="text-gray-700 hover:text-purple-600 transition-colors font-medium">Skills</button>
+              <button onClick={() => scrollToSection('projects')} className="text-gray-700 hover:text-purple-600 transition-colors font-medium">Projects</button>
+              <button onClick={() => scrollToSection('contact')} className="text-gray-700 hover:text-purple-600 transition-colors font-medium">Contact</button>
             </div>
           </div>
         </div>
@@ -99,11 +98,11 @@ const Index = () => {
 
       {/* Hero Section */}
       <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-r from-blue-500/10 to-teal-500/10"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-purple-500/10 to-orange-500/10"></div>
         <div className={`container mx-auto px-6 text-center z-10 transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
-          <div className="mb-4 text-blue-600 font-semibold text-lg">👋 Hello, I'm</div>
+          <div className="mb-4 text-purple-600 font-semibold text-lg">👋 Hello, I'm</div>
           <h1 className="text-5xl md:text-7xl font-bold mb-6 text-gray-800">
-            <span className="bg-gradient-to-r from-blue-600 to-teal-600 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-purple-600 to-orange-600 bg-clip-text text-transparent">
               John Doe
             </span>
           </h1>
@@ -127,13 +126,13 @@ const Index = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button 
               onClick={() => scrollToSection('projects')}
-              className="bg-gradient-to-r from-blue-600 to-teal-600 hover:from-blue-700 hover:to-teal-700 text-white px-8 py-3 text-lg shadow-lg"
+              className="bg-gradient-to-r from-purple-600 to-orange-600 hover:from-purple-700 hover:to-orange-700 text-white px-8 py-3 text-lg shadow-lg"
             >
               View My Work
             </Button>
             <Button 
               variant="outline" 
-              className="border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white px-8 py-3 text-lg"
+              className="border-purple-600 text-purple-600 hover:bg-purple-600 hover:text-white px-8 py-3 text-lg"
             >
               <Download className="w-4 h-4 mr-2" />
               Download Resume
@@ -141,7 +140,7 @@ const Index = () => {
             <Button 
               onClick={() => scrollToSection('contact')}
               variant="outline" 
-              className="border-teal-600 text-teal-600 hover:bg-teal-600 hover:text-white px-8 py-3 text-lg"
+              className="border-orange-600 text-orange-600 hover:bg-orange-600 hover:text-white px-8 py-3 text-lg"
             >
               Get In Touch
             </Button>
@@ -156,7 +155,7 @@ const Index = () => {
       <section id="about" className="py-20 bg-white">
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-4xl font-bold text-center mb-12 bg-gradient-to-r from-blue-600 to-teal-600 bg-clip-text text-transparent">
+            <h2 className="text-4xl font-bold text-center mb-12 bg-gradient-to-r from-purple-600 to-orange-600 bg-clip-text text-transparent">
               About Me
             </h2>
             <div className="grid md:grid-cols-2 gap-12 items-center">
@@ -176,18 +175,18 @@ const Index = () => {
                   to optimize performance and improve development workflows.
                 </p>
                 <div className="flex gap-4">
-                  <Button variant="outline" className="border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white">
+                  <Button variant="outline" className="border-purple-600 text-purple-600 hover:bg-purple-600 hover:text-white">
                     <Github className="w-4 h-4 mr-2" />
                     GitHub
                   </Button>
-                  <Button variant="outline" className="border-teal-600 text-teal-600 hover:bg-teal-600 hover:text-white">
+                  <Button variant="outline" className="border-orange-600 text-orange-600 hover:bg-orange-600 hover:text-white">
                     <Linkedin className="w-4 h-4 mr-2" />
                     LinkedIn
                   </Button>
                 </div>
               </div>
-              <div className="bg-gradient-to-br from-blue-50 to-teal-50 rounded-lg p-6 border border-blue-200">
-                <h3 className="text-xl font-semibold mb-4 text-blue-700">Professional Highlights</h3>
+              <div className="bg-gradient-to-br from-purple-50 to-orange-50 rounded-lg p-6 border border-purple-200">
+                <h3 className="text-xl font-semibold mb-4 text-purple-700">Professional Highlights</h3>
                 <ul className="space-y-3 text-gray-600">
                   <li>🚀 4+ years of MERN stack development</li>
                   <li>💻 30+ successful projects delivered</li>
@@ -204,19 +203,19 @@ const Index = () => {
       </section>
 
       {/* Experience Section */}
-      <section id="experience" className="py-20 bg-gradient-to-br from-blue-50 to-teal-50">
+      <section id="experience" className="py-20 bg-gradient-to-br from-purple-50 to-orange-50">
         <div className="container mx-auto px-6">
-          <h2 className="text-4xl font-bold text-center mb-12 bg-gradient-to-r from-blue-600 to-teal-600 bg-clip-text text-transparent">
+          <h2 className="text-4xl font-bold text-center mb-12 bg-gradient-to-r from-purple-600 to-orange-600 bg-clip-text text-transparent">
             Professional Experience
           </h2>
           <div className="max-w-4xl mx-auto space-y-8">
             {experience.map((exp, index) => (
-              <Card key={index} className="bg-white border-blue-200 hover:border-teal-400 transition-all duration-300 hover:shadow-lg">
+              <Card key={index} className="bg-white border-purple-200 hover:border-orange-400 transition-all duration-300 hover:shadow-lg">
                 <CardHeader>
                   <div className="flex justify-between items-start">
                     <div>
                       <CardTitle className="text-gray-800 text-xl">{exp.position}</CardTitle>
-                      <CardDescription className="text-blue-600 font-semibold text-lg">
+                      <CardDescription className="text-purple-600 font-semibold text-lg">
                         {exp.company}
                       </CardDescription>
                     </div>
@@ -243,17 +242,17 @@ const Index = () => {
       {/* Skills Section */}
       <section id="skills" className="py-20 bg-white">
         <div className="container mx-auto px-6">
-          <h2 className="text-4xl font-bold text-center mb-12 bg-gradient-to-r from-blue-600 to-teal-600 bg-clip-text text-transparent">
+          <h2 className="text-4xl font-bold text-center mb-12 bg-gradient-to-r from-purple-600 to-orange-600 bg-clip-text text-transparent">
             Technical Skills
           </h2>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl mx-auto">
             {skills.map((skill, index) => (
-              <Card key={skill.name} className="bg-white border-blue-200 hover:border-teal-400 transition-all duration-300 hover:scale-105 hover:shadow-lg">
+              <Card key={skill.name} className="bg-white border-purple-200 hover:border-orange-400 transition-all duration-300 hover:scale-105 hover:shadow-lg">
                 <CardContent className="p-6 text-center">
-                  <skill.icon className="w-12 h-12 mx-auto mb-4 text-blue-600" />
+                  <skill.icon className="w-12 h-12 mx-auto mb-4 text-purple-600" />
                   <h3 className="text-gray-800 font-semibold mb-1">{skill.name}</h3>
                   <p className="text-gray-500 text-sm mb-1">{skill.category}</p>
-                  <span className="text-xs bg-blue-100 text-blue-700 px-2 py-1 rounded-full">
+                  <span className="text-xs bg-purple-100 text-purple-700 px-2 py-1 rounded-full">
                     {skill.level}
                   </span>
                 </CardContent>
@@ -264,14 +263,14 @@ const Index = () => {
       </section>
 
       {/* Projects Section */}
-      <section id="projects" className="py-20 bg-gradient-to-br from-blue-50 to-teal-50">
+      <section id="projects" className="py-20 bg-gradient-to-br from-purple-50 to-orange-50">
         <div className="container mx-auto px-6">
-          <h2 className="text-4xl font-bold text-center mb-12 bg-gradient-to-r from-blue-600 to-teal-600 bg-clip-text text-transparent">
+          <h2 className="text-4xl font-bold text-center mb-12 bg-gradient-to-r from-purple-600 to-orange-600 bg-clip-text text-transparent">
             Featured Projects
           </h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
             {projects.map((project, index) => (
-              <Card key={project.title} className="bg-white border-gray-200 hover:border-blue-400 transition-all duration-300 hover:scale-105 hover:shadow-xl overflow-hidden">
+              <Card key={project.title} className="bg-white border-gray-200 hover:border-purple-400 transition-all duration-300 hover:scale-105 hover:shadow-xl overflow-hidden">
                 <div className="aspect-video bg-gray-100 relative overflow-hidden">
                   <img 
                     src={project.image} 
@@ -293,7 +292,7 @@ const Index = () => {
                     {project.tech.map((tech) => (
                       <span 
                         key={tech} 
-                        className="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-sm font-medium"
+                        className="px-3 py-1 bg-purple-100 text-purple-700 rounded-full text-sm font-medium"
                       >
                         {tech}
                       </span>
@@ -304,7 +303,7 @@ const Index = () => {
                       <Github className="w-4 h-4 mr-2" />
                       Code
                     </Button>
-                    <Button size="sm" className="bg-blue-600 hover:bg-blue-700 text-white">
+                    <Button size="sm" className="bg-purple-600 hover:bg-purple-700 text-white">
                       <ExternalLink className="w-4 h-4 mr-2" />
                       Live Demo
                     </Button>
@@ -320,14 +319,14 @@ const Index = () => {
       <section id="contact" className="py-20 bg-white">
         <div className="container mx-auto px-6">
           <div className="max-w-2xl mx-auto text-center">
-            <h2 className="text-4xl font-bold mb-8 bg-gradient-to-r from-blue-600 to-teal-600 bg-clip-text text-transparent">
+            <h2 className="text-4xl font-bold mb-8 bg-gradient-to-r from-purple-600 to-orange-600 bg-clip-text text-transparent">
               Let's Work Together
             </h2>
             <p className="text-xl text-gray-600 mb-8">
               I'm currently available for new opportunities. Let's discuss how I can help bring your next project to life 
               with innovative solutions and clean, scalable code.
             </p>
-            <div className="bg-gradient-to-br from-blue-50 to-teal-50 rounded-lg p-6 border border-blue-200 mb-8">
+            <div className="bg-gradient-to-br from-purple-50 to-orange-50 rounded-lg p-6 border border-purple-200 mb-8">
               <h3 className="text-lg font-semibold text-gray-800 mb-4">Ready to hire? Let's connect!</h3>
               <p className="text-gray-600 mb-4">
                 📧 john.doe@email.com | 📱 (555) 123-4567
@@ -337,11 +336,11 @@ const Index = () => {
               </p>
             </div>
             <div className="flex justify-center space-x-6">
-              <Button className="bg-blue-600 hover:bg-blue-700 text-white">
+              <Button className="bg-purple-600 hover:bg-purple-700 text-white">
                 <Mail className="w-5 h-5 mr-2" />
                 Email Me
               </Button>
-              <Button variant="outline" className="border-teal-600 text-teal-600 hover:bg-teal-600 hover:text-white">
+              <Button variant="outline" className="border-orange-600 text-orange-600 hover:bg-orange-600 hover:text-white">
                 <Linkedin className="w-5 h-5 mr-2" />
                 LinkedIn
               </Button>
@@ -355,12 +354,12 @@ const Index = () => {
       </section>
 
       {/* Footer */}
-      <footer className="bg-gradient-to-r from-blue-600 to-teal-600 py-8 text-white">
+      <footer className="bg-gradient-to-r from-purple-600 to-orange-600 py-8 text-white">
         <div className="container mx-auto px-6 text-center">
           <p className="mb-2">
             © 2024 John Doe - Senior Full Stack Developer
           </p>
-          <p className="text-blue-100 text-sm">
+          <p className="text-purple-100 text-sm">
             Built with React, TypeScript & Tailwind CSS
           </p>
         </div>
