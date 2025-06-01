@@ -57,20 +57,20 @@ const Index = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white">
+    <div className="min-h-screen bg-gradient-to-br from-blue-50 via-indigo-50 to-teal-50">
       {/* Navigation */}
-      <nav className="fixed top-0 left-0 right-0 z-50 bg-slate-900/80 backdrop-blur-md border-b border-slate-700">
+      <nav className="fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-md border-b border-blue-200 shadow-sm">
         <div className="container mx-auto px-6 py-4">
           <div className="flex justify-between items-center">
-            <div className="text-2xl font-bold bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
+            <div className="text-2xl font-bold bg-gradient-to-r from-blue-600 to-teal-600 bg-clip-text text-transparent">
               Portfolio
             </div>
             <div className="hidden md:flex space-x-8">
-              <button onClick={() => scrollToSection('home')} className="hover:text-blue-400 transition-colors">Home</button>
-              <button onClick={() => scrollToSection('about')} className="hover:text-blue-400 transition-colors">About</button>
-              <button onClick={() => scrollToSection('skills')} className="hover:text-blue-400 transition-colors">Skills</button>
-              <button onClick={() => scrollToSection('projects')} className="hover:text-blue-400 transition-colors">Projects</button>
-              <button onClick={() => scrollToSection('contact')} className="hover:text-blue-400 transition-colors">Contact</button>
+              <button onClick={() => scrollToSection('home')} className="text-gray-700 hover:text-blue-600 transition-colors font-medium">Home</button>
+              <button onClick={() => scrollToSection('about')} className="text-gray-700 hover:text-blue-600 transition-colors font-medium">About</button>
+              <button onClick={() => scrollToSection('skills')} className="text-gray-700 hover:text-blue-600 transition-colors font-medium">Skills</button>
+              <button onClick={() => scrollToSection('projects')} className="text-gray-700 hover:text-blue-600 transition-colors font-medium">Projects</button>
+              <button onClick={() => scrollToSection('contact')} className="text-gray-700 hover:text-blue-600 transition-colors font-medium">Contact</button>
             </div>
           </div>
         </div>
@@ -78,63 +78,63 @@ const Index = () => {
 
       {/* Hero Section */}
       <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-r from-blue-500/10 to-purple-500/10"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-blue-500/10 to-teal-500/10"></div>
         <div className={`container mx-auto px-6 text-center z-10 transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
-          <h1 className="text-5xl md:text-7xl font-bold mb-6">
-            <span className="bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
+          <h1 className="text-5xl md:text-7xl font-bold mb-6 text-gray-800">
+            <span className="bg-gradient-to-r from-blue-600 to-teal-600 bg-clip-text text-transparent">
               Full Stack Developer
             </span>
           </h1>
-          <p className="text-xl md:text-2xl text-slate-300 mb-8 max-w-3xl mx-auto">
+          <p className="text-xl md:text-2xl text-gray-600 mb-8 max-w-3xl mx-auto">
             Crafting scalable web applications with the MERN stack. 
             Passionate about creating seamless user experiences and robust backend solutions.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button 
               onClick={() => scrollToSection('projects')}
-              className="bg-gradient-to-r from-blue-500 to-purple-500 hover:from-blue-600 hover:to-purple-600 text-white px-8 py-3 text-lg"
+              className="bg-gradient-to-r from-blue-600 to-teal-600 hover:from-blue-700 hover:to-teal-700 text-white px-8 py-3 text-lg shadow-lg"
             >
               View My Work
             </Button>
             <Button 
               onClick={() => scrollToSection('contact')}
               variant="outline" 
-              className="border-blue-400 text-blue-400 hover:bg-blue-400 hover:text-white px-8 py-3 text-lg"
+              className="border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white px-8 py-3 text-lg"
             >
               Get In Touch
             </Button>
           </div>
         </div>
         <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-          <ChevronDown className="w-6 h-6 text-slate-400" />
+          <ChevronDown className="w-6 h-6 text-gray-500" />
         </div>
       </section>
 
       {/* About Section */}
-      <section id="about" className="py-20 bg-slate-800/50">
+      <section id="about" className="py-20 bg-white">
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-4xl font-bold mb-8 bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
+            <h2 className="text-4xl font-bold mb-8 bg-gradient-to-r from-blue-600 to-teal-600 bg-clip-text text-transparent">
               About Me
             </h2>
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <div className="text-left">
-                <p className="text-lg text-slate-300 mb-6">
+                <p className="text-lg text-gray-600 mb-6">
                   I'm a passionate full-stack developer specializing in the MERN stack. With a strong foundation in 
                   modern web technologies, I create dynamic, responsive, and user-friendly applications.
                 </p>
-                <p className="text-lg text-slate-300 mb-6">
+                <p className="text-lg text-gray-600 mb-6">
                   My expertise spans from crafting intuitive frontend interfaces with React to building robust 
                   backend APIs with Node.js and Express, all while leveraging MongoDB for efficient data management.
                 </p>
-                <p className="text-lg text-slate-300">
+                <p className="text-lg text-gray-600">
                   I'm constantly learning and adapting to new technologies, always striving to write clean, 
                   maintainable code and deliver exceptional user experiences.
                 </p>
               </div>
-              <div className="bg-slate-700/50 rounded-lg p-6">
-                <h3 className="text-xl font-semibold mb-4 text-blue-400">Quick Facts</h3>
-                <ul className="space-y-3 text-slate-300">
+              <div className="bg-gradient-to-br from-blue-50 to-teal-50 rounded-lg p-6 border border-blue-200">
+                <h3 className="text-xl font-semibold mb-4 text-blue-700">Quick Facts</h3>
+                <ul className="space-y-3 text-gray-600">
                   <li>🚀 3+ years of MERN stack development</li>
                   <li>💻 20+ projects completed</li>
                   <li>🎯 Focus on scalable, maintainable code</li>
@@ -148,18 +148,18 @@ const Index = () => {
       </section>
 
       {/* Skills Section */}
-      <section id="skills" className="py-20">
+      <section id="skills" className="py-20 bg-gradient-to-br from-blue-50 to-teal-50">
         <div className="container mx-auto px-6">
-          <h2 className="text-4xl font-bold text-center mb-12 bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
+          <h2 className="text-4xl font-bold text-center mb-12 bg-gradient-to-r from-blue-600 to-teal-600 bg-clip-text text-transparent">
             Skills & Technologies
           </h2>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl mx-auto">
             {skills.map((skill, index) => (
-              <Card key={skill.name} className="bg-slate-800/50 border-slate-700 hover:border-blue-400 transition-all duration-300 hover:scale-105">
+              <Card key={skill.name} className="bg-white border-blue-200 hover:border-teal-400 transition-all duration-300 hover:scale-105 hover:shadow-lg">
                 <CardContent className="p-6 text-center">
-                  <skill.icon className="w-12 h-12 mx-auto mb-4 text-blue-400" />
-                  <h3 className="text-white font-semibold">{skill.name}</h3>
-                  <p className="text-slate-400 text-sm">{skill.category}</p>
+                  <skill.icon className="w-12 h-12 mx-auto mb-4 text-blue-600" />
+                  <h3 className="text-gray-800 font-semibold">{skill.name}</h3>
+                  <p className="text-gray-500 text-sm">{skill.category}</p>
                 </CardContent>
               </Card>
             ))}
@@ -168,15 +168,15 @@ const Index = () => {
       </section>
 
       {/* Projects Section */}
-      <section id="projects" className="py-20 bg-slate-800/50">
+      <section id="projects" className="py-20 bg-white">
         <div className="container mx-auto px-6">
-          <h2 className="text-4xl font-bold text-center mb-12 bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
+          <h2 className="text-4xl font-bold text-center mb-12 bg-gradient-to-r from-blue-600 to-teal-600 bg-clip-text text-transparent">
             Featured Projects
           </h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
             {projects.map((project, index) => (
-              <Card key={project.title} className="bg-slate-700/50 border-slate-600 hover:border-blue-400 transition-all duration-300 hover:scale-105 overflow-hidden">
-                <div className="aspect-video bg-slate-600 relative overflow-hidden">
+              <Card key={project.title} className="bg-white border-gray-200 hover:border-blue-400 transition-all duration-300 hover:scale-105 hover:shadow-xl overflow-hidden">
+                <div className="aspect-video bg-gray-100 relative overflow-hidden">
                   <img 
                     src={project.image} 
                     alt={project.title}
@@ -184,8 +184,8 @@ const Index = () => {
                   />
                 </div>
                 <CardHeader>
-                  <CardTitle className="text-white">{project.title}</CardTitle>
-                  <CardDescription className="text-slate-300">
+                  <CardTitle className="text-gray-800">{project.title}</CardTitle>
+                  <CardDescription className="text-gray-600">
                     {project.description}
                   </CardDescription>
                 </CardHeader>
@@ -194,18 +194,18 @@ const Index = () => {
                     {project.tech.map((tech) => (
                       <span 
                         key={tech} 
-                        className="px-3 py-1 bg-blue-500/20 text-blue-300 rounded-full text-sm"
+                        className="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-sm font-medium"
                       >
                         {tech}
                       </span>
                     ))}
                   </div>
                   <div className="flex gap-3">
-                    <Button variant="outline" size="sm" className="border-slate-500 text-slate-300 hover:text-white">
+                    <Button variant="outline" size="sm" className="border-gray-300 text-gray-600 hover:text-gray-800 hover:border-gray-400">
                       <Github className="w-4 h-4 mr-2" />
                       Code
                     </Button>
-                    <Button size="sm" className="bg-blue-500 hover:bg-blue-600">
+                    <Button size="sm" className="bg-blue-600 hover:bg-blue-700 text-white">
                       <ExternalLink className="w-4 h-4 mr-2" />
                       Live Demo
                     </Button>
@@ -218,25 +218,25 @@ const Index = () => {
       </section>
 
       {/* Contact Section */}
-      <section id="contact" className="py-20">
+      <section id="contact" className="py-20 bg-gradient-to-br from-blue-50 to-teal-50">
         <div className="container mx-auto px-6">
           <div className="max-w-2xl mx-auto text-center">
-            <h2 className="text-4xl font-bold mb-8 bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
+            <h2 className="text-4xl font-bold mb-8 bg-gradient-to-r from-blue-600 to-teal-600 bg-clip-text text-transparent">
               Let's Work Together
             </h2>
-            <p className="text-xl text-slate-300 mb-8">
+            <p className="text-xl text-gray-600 mb-8">
               Ready to bring your ideas to life? I'm always excited to work on new projects and collaborate with amazing people.
             </p>
             <div className="flex justify-center space-x-6">
-              <Button variant="outline" className="border-blue-400 text-blue-400 hover:bg-blue-400 hover:text-white">
+              <Button variant="outline" className="border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white">
                 <Mail className="w-5 h-5 mr-2" />
                 Email Me
               </Button>
-              <Button variant="outline" className="border-purple-400 text-purple-400 hover:bg-purple-400 hover:text-white">
+              <Button variant="outline" className="border-teal-600 text-teal-600 hover:bg-teal-600 hover:text-white">
                 <Linkedin className="w-5 h-5 mr-2" />
                 LinkedIn
               </Button>
-              <Button variant="outline" className="border-slate-400 text-slate-400 hover:bg-slate-400 hover:text-white">
+              <Button variant="outline" className="border-gray-600 text-gray-600 hover:bg-gray-600 hover:text-white">
                 <Github className="w-5 h-5 mr-2" />
                 GitHub
               </Button>
@@ -246,9 +246,9 @@ const Index = () => {
       </section>
 
       {/* Footer */}
-      <footer className="bg-slate-900 py-8 border-t border-slate-700">
+      <footer className="bg-white py-8 border-t border-gray-200">
         <div className="container mx-auto px-6 text-center">
-          <p className="text-slate-400">
+          <p className="text-gray-500">
             © 2024 Full Stack Developer Portfolio. Built with React & Tailwind CSS.
           </p>
         </div>
