@@ -111,7 +111,7 @@ const Index = () => {
         "Redux",
         "Mocha Chai",
       ],
-      image: "../../../public/logisticsPlatform.png",
+      image: "../../../logisticsPlatform.png",
       github: "#",
       live: "https://development.d23fx5b9jaftrw.amplifyapp.com/dashboard/default",
       highlight: "",
@@ -129,7 +129,7 @@ const Index = () => {
         "Tailwind CSS",
         "ShadCN UI",
       ],
-      image: "../../../public/nudjPlatform.png",
+      image: "../../../nudjPlatform.png",
       github: "#",
       live: "https://devadmin.nudj.cx/admin",
       highlight: "",
@@ -149,7 +149,7 @@ const Index = () => {
       description:
         "Full-stack job portal platform enabling users to search and apply for jobs and track applications, secure authentication, and role-based dashboards for job seekers and employers.",
       tech: ["React", "Node.js", "MongoDb", "Tailwind CSS", "Express.js"],
-      image: "../../../public/jobportal.png",
+      image: "../../../jobportal.png",
       github: "https://github.com/shubham2588/JobWeb",
       live: "https://jobweb-frontend.onrender.com/",
       highlight: "Job search and hiring platform",
@@ -256,7 +256,7 @@ const Index = () => {
 
   const handleDownloadResume = () => {
     const link = document.createElement("a");
-    link.href = "../../public/Shubham_Resume.pdf"; // path to your resume file in public folder
+    link.href = "../../Shubham_Resume.pdf"; // path to your resume file in public folder
     link.download = "Shubham_Chaudhary_Resume.pdf"; // suggested filename
     link.click();
   };
