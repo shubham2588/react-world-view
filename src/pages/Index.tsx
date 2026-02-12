@@ -114,10 +114,10 @@ const Index = () => {
       image: "../../../logisticsPlatform.png",
       github: "#",
       live: "https://development.d23fx5b9jaftrw.amplifyapp.com/dashboard/default",
-      highlight: "",
+      highlight: "Real-time shipment tracking & 90-day reporting",
     },
     {
-      title: "Nudj Digital Platform",
+      title: "B2B Gamified Platform",
       description:
         "B2B SaaS gamified community engagement platform enabling businesses to create branded spaces where users complete challenges to earn rewards. Built interactive dashboards with analytics, real-time leaderboards, 3D animated reward cards, automated workflow management, and comprehensive reporting with real-time data synchronization.",
       tech: [
@@ -132,7 +132,7 @@ const Index = () => {
       image: "../../../nudjPlatform.png",
       github: "#",
       live: "https://devadmin.nudj.cx/admin",
-      highlight: "",
+      highlight: "B2B SaaS gamified community engagement platform",
     },
     {
       title: "VR Platform",
@@ -142,7 +142,7 @@ const Index = () => {
       image: "../../../vrPlatform.png",
       github: "#",
       live: "https://astra3d.com/",
-      highlight: "Processes 1M+ data points",
+      highlight: "360° VR tours",
     },
     {
       title: "Job Portal",
@@ -170,7 +170,7 @@ const Index = () => {
         "https://images.unsplash.com/photo-1552664730-d307ca884978?w=500&h=300&fit=crop",
       github: "#",
       live: "#",
-      highlight: "Used by 500+ teams daily",
+      highlight: "Real-time room-based calling with WebSockets",
     },
   ];
   // Depthin Solution	  November 2022 – Present
@@ -191,7 +191,7 @@ const Index = () => {
       projects: [
         {
           name: "B2B Gamified Community Platform",
-          period: "April 2025 - Present",
+          period: "April 2025 - Jan 2026",
           description:
             "Developed and maintained an admin dashboard for a B2B SaaS gamified community engagement platform.",
           achievements: [
@@ -205,7 +205,7 @@ const Index = () => {
         },
         {
           name: "Logistics & Shipment Management Platform",
-          period: "Nov 2022 - Aril 2025",
+          period: "Nov 2022 - Aril 2025, Feb 2026 - Present",
           description:
             "Spearheaded a logistics platform for managing shippers, carriers, rates, and shipments.",
           achievements: [
@@ -412,19 +412,19 @@ const Index = () => {
                   Let’s connect to build innovative solutions together!.
                 </p>
                 <div className="flex gap-4">
-                  <a
+                  {/* <a
                     href="https://github.com/shubham2588"
                     target="_blank"
                     rel="noopener noreferrer"
-                  >
-                    <Button
+                  > */}
+                    {/* <Button
                       variant="outline"
                       className="border-blue-500 text-blue-400 hover:bg-blue-600 hover:text-white"
-                    >
-                      <Github className="w-4 h-4 mr-2" />
+                    > */}
+                      {/* <Github className="w-4 h-4 mr-2" />
                       GitHub
                     </Button>
-                  </a>
+                  </a> */}
 
                   <a
                     href="https://www.linkedin.com/in/shubham-chaudhary-23a00016b/"
@@ -579,9 +579,9 @@ const Index = () => {
                     alt={project.title}
                     className="w-full h-full object-cover hover:scale-110 transition-transform duration-300"
                   />
-                  <div className="absolute top-4 right-4 bg-green-600 text-white px-2 py-1 rounded-full text-xs font-semibold">
+                  {/* <div className="absolute top-4 right-4 bg-green-600 text-white px-2 py-1 rounded-full text-xs font-semibold">
                     {project.highlight}
-                  </div>
+                  </div> */}
                 </div>
                 <CardHeader>
                   <CardTitle className="text-white">{project.title}</CardTitle>
