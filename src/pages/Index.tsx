@@ -191,7 +191,7 @@ const Index = () => {
       projects: [
         {
           name: "B2B Gamified Community Platform",
-          period: "April 2025 - Jan 2026",
+          period: "May 2025 - Jan 2026",
           description:
             "Developed and maintained an admin dashboard for a B2B SaaS gamified community engagement platform.",
           achievements: [
@@ -222,7 +222,7 @@ const Index = () => {
     {
       position: "Full Stack Developer",
       company: "Real-estate VR Platform",
-      period: "Jan 2024 - Present",
+      period: "Jan 2024 - March 2024",
       description:
         "Contributed to the development of a VR-based real estate platform enabling users to create, manage, and experience immersive virtual property tours.",
       achievements: [
