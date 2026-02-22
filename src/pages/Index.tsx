@@ -205,7 +205,7 @@ const Index = () => {
         },
         {
           name: "Logistics & Shipment Management Platform",
-          period: "Nov 2022 - Aril 2025, Feb 2026 - Present",
+          period: "Nov 2022 - April 2025, Feb 2026 - Present",
           description:
             "Spearheaded a logistics platform for managing shippers, carriers, rates, and shipments.",
           achievements: [
@@ -417,11 +417,11 @@ const Index = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                   > */}
-                    {/* <Button
+                  {/* <Button
                       variant="outline"
                       className="border-blue-500 text-blue-400 hover:bg-blue-600 hover:text-white"
                     > */}
-                      {/* <Github className="w-4 h-4 mr-2" />
+                  {/* <Github className="w-4 h-4 mr-2" />
                       GitHub
                     </Button>
                   </a> */}
