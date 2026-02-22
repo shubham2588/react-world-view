@@ -12,6 +12,13 @@ import {
   Download,
   MapPin,
   Calendar,
+  FileCode2,
+  Braces,
+  Code2,
+  Layout,
+  Cloud,
+  TestTube,
+  Workflow,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import {
@@ -30,10 +37,15 @@ const Index = () => {
   }, []);
 
   const skills = [
-    { name: "JavaScript", icon: Code, category: "Language", level: "Advanced" },
+    {
+      name: "JavaScript",
+      icon: FileCode2,
+      category: "Language",
+      level: "Advanced",
+    },
     { name: "Node.js", icon: Server, category: "Backend", level: "Advanced" },
-    { name: "React", icon: Code, category: "Frontend", level: "Advanced" },
-    { name: "Redux", icon: Code, category: "Frontend", level: "Expert" },
+    { name: "React", icon: Code2, category: "Frontend", level: "Advanced" },
+    { name: "Redux", icon: Workflow, category: "Frontend", level: "Advanced" },
     {
       name: "Express.js",
       icon: Server,
@@ -54,13 +66,13 @@ const Index = () => {
     },
     {
       name: "TypeScript",
-      icon: Code,
+      icon: Braces,
       category: "Language",
       level: "Intermediate",
     },
     {
       name: "Next.js",
-      icon: Code,
+      icon: Layout,
       category: "Frontend",
       level: "Intermediate",
     },
@@ -72,21 +84,27 @@ const Index = () => {
     // },
     {
       name: "AWS Services",
-      icon: Server,
+      icon: Cloud,
       category: "Backend",
       level: "Intermediate",
     },
     {
       name: "HTML",
-      icon: Code,
+      icon: FileCode2,
       category: "Frontend",
       level: "Intermediate",
     },
     {
       name: "Tailwind CSS",
-      icon: Code,
+      icon: Code2,
       category: "Frontend",
       level: "Beginner",
+    },
+    {
+      name: "Mocha Chai",
+      icon: TestTube,
+      category: "Testing",
+      level: "Advanced",
     },
     {
       name: "Git & GitHub",
@@ -166,8 +184,7 @@ const Index = () => {
         "MongoDB",
         "MaterialUI",
       ],
-      image:
-        "https://images.unsplash.com/photo-1552664730-d307ca884978?w=500&h=300&fit=crop",
+      image: "../../../nurseCallingSystem.png",
       github: "#",
       live: "#",
       highlight: "Real-time room-based calling with WebSockets",
